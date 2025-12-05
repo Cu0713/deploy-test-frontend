@@ -26,7 +26,7 @@ function App() {
     try {
       setStatus("アップロード中…");
 
-      const res = await fetch("http://localhost:8000/upload", {
+      const res = await fetch("https://asia-northeast1-massive-house-480305-m8.cloudfunctions.net/upload_image", {
         method: "POST",
         body: formData,
       });
